@@ -43,6 +43,10 @@ async def wait_for_element_with_retry(page, selector, timeout=10000, max_retries
                 return None
     return None
 
+
+
+# --- Jobs List Endpoint Functions ---
+
 async def get_job_listings(page, container_selector, item_selector):
     """Extract job listings from the page."""
     container = await wait_for_element_with_retry(page, container_selector)
